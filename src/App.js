@@ -2,62 +2,60 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Box } from '@mui/material';
 import './App.css';
 
-import data from './inventory.json'; // Importa il file JSON
-
 function App() {
-  const [inventory, setInventory] = useState([]);
-  const [quantities, setQuantities] = useState({}); // Definisci l'oggetto quantities
+  const [inventory, setInventory] = useState({});
+  const [quantities, setQuantities] = useState({});
 
   useEffect(() => {
-    // Funzione per calcolare il costo medio di ogni prodotto
-    const calculateAverageCost = () => {
-      const products = {}; // Oggetto per tenere traccia della somma dei costi per ogni prodotto
-      const quantities = {}; // Oggetto per tenere traccia della somma delle quantità per ogni prodotto
+    const fetchData = async () => {
+      try {
+        // Effettua una richiesta HTTP per recuperare il file JSON dal repository su GitHub
+        const response = await fetch('https://github.com/iFralex/flipping-inventory/blob/9a58538a6d4940b86d531b92bd2a9e64212962ab/src/inventory.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
 
-      // Cicla su ogni ordine
-      data.orders.forEach(order => {
-        // Cicla su ogni prodotto nell'ordine
-        order.products.forEach(product => {
-          // Dividi il nome del prodotto dalla quantità, se presente
-          const [productName, quantityMatch] = product.split(' x');
-          const quantity = quantityMatch ? parseInt(quantityMatch) : 1;
-          console.log(productName, quantity)
-          // Aggiorna la somma delle quantità
-          quantities[productName] = (quantities[productName] || 0) + quantity;
-
-          // Calcola il costo finale dell'ordine
-          const orderTotal = order.order_cost + order.shipping_cost + order.insurance_cost;
-
-          // Calcola il costo target dell'ordine
-          const targetPrice = data.target_prices[productName];
-          const orderTargetCost = targetPrice * quantity;
-
-          // Calcola il coefficiente per questo ordine
-          const coefficient = orderTotal / orderTargetCost;
-
-          // Calcola il costo effettivo del prodotto per questo ordine
-          const actualPrice = targetPrice * coefficient;
-
-          // Aggiorna la somma dei costi per questo prodotto
-          products[productName] = (products[productName] || 0) + actualPrice;
-        });
-      });
-
-      // Calcola il costo medio per ogni prodotto
-      const averageCosts = {};
-      Object.keys(products).forEach(product => {
-        averageCosts[product] = products[product] / quantities[product];
-      });
-
-      return [averageCosts, quantities];
+        // Calcola il costo medio di ogni prodotto e aggiorna lo stato
+        const avg = calculateAverageCost(data);
+        setInventory(avg[0]);
+        setQuantities(avg[1]);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
     };
 
-    // Calcola il costo medio di ogni prodotto e aggiorna lo stato
-    const avg = calculateAverageCost()
-    setInventory(avg[0]);
-    console.log(avg[1])
-    setQuantities(avg[1]); // Aggiorna lo stato delle quantità
+    fetchData();
   }, []);
+
+  const calculateAverageCost = (data) => {
+    const products = {};
+    const quantities = {};
+
+    data.orders.forEach(order => {
+      order.products.forEach(product => {
+        const [productName, quantityMatch] = product.split(' x');
+        const quantity = quantityMatch ? parseInt(quantityMatch) : 1;
+
+        quantities[productName] = (quantities[productName] || 0) + quantity;
+
+        const orderTotal = order.order_cost + order.shipping_cost + order.insurance_cost;
+        const targetPrice = data.target_prices[productName];
+        const orderTargetCost = targetPrice * quantity;
+        const coefficient = orderTotal / orderTargetCost;
+        const actualPrice = targetPrice * coefficient;
+
+        products[productName] = (products[productName] || 0) + actualPrice;
+      });
+    });
+
+    const averageCosts = {};
+    Object.keys(products).forEach(product => {
+      averageCosts[product] = products[product] / quantities[product];
+    });
+
+    return [averageCosts, quantities];
+  };
 
   return (
     <div className="App">
