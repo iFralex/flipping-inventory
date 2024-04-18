@@ -1,0 +1,37 @@
+{
+    "orders": [
+        {
+            "date": "15/04/24",
+            "products": ["Wii", "Mario Kart Wii", "Wii Mote x2"],
+            "shipping_cost": 5.00,
+            "insurance_cost": 2.50,
+            "order_cost": 250.00,
+            "platform": "ebay"
+        },
+        {
+            "date": "16/04/24",
+            "products": ["Super Smash Bros browl", "The Legend of Zelda: Sky of Sword", "Wii", "Mario Kart Wii", "Wii Mote", "Wheel"],
+            "shipping_cost": 5.00,
+            "insurance_cost": 3.00,
+            "order_cost": 180.00,
+            "platform": "Amazon"
+        },
+        {
+            "date": "17/04/24",
+            "products": ["Nunchuck x2", "Wii", "Wheel", "Wii Mote"],
+            "shipping_cost": 6.00,
+            "insurance_cost": 2.00,
+            "order_cost": 120.00,
+            "platform": "eBay"
+        }
+    ],
+    "target_prices": {
+        "Wii": 200.00,
+        "Mario Kart Wii": 50.00,
+        "Wii Mote": 30.00,
+        "Super Smash Bros Browl": 60.00,
+        "The Legend of Zelda: Sky of World": 50.00,
+        "Nunchuck": 20.00,
+        "Wheel": 15.00
+    }
+}
