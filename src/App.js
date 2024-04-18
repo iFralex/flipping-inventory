@@ -10,7 +10,7 @@ function App() {
     const fetchData = async () => {
       try {
         // Effettua una richiesta HTTP per recuperare il file JSON dal repository su GitHub
-        const response = await fetch('https://github.com/iFralex/flipping-inventory/blob/9a58538a6d4940b86d531b92bd2a9e64212962ab/src/inventory.json');
+        const response = await fetch('https://github.com/iFralex/flipping-inventory/blob/0b181741b6377891e7f6cfbde319fdce22cdf027/inventory.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
