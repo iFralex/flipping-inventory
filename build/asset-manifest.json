@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/flipping-inventory/static/css/main.f855e6bc.css",
-    "main.js": "/flipping-inventory/static/js/main.17c626dc.js",
+    "main.js": "/flipping-inventory/static/js/main.bb723c8d.js",
     "index.html": "/flipping-inventory/index.html",
     "main.f855e6bc.css.map": "/flipping-inventory/static/css/main.f855e6bc.css.map",
-    "main.17c626dc.js.map": "/flipping-inventory/static/js/main.17c626dc.js.map"
+    "main.bb723c8d.js.map": "/flipping-inventory/static/js/main.bb723c8d.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.17c626dc.js"
+    "static/js/main.bb723c8d.js"
   ]
 }
