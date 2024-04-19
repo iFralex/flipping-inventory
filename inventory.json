@@ -34,12 +34,14 @@
         }
  ],
     "target_prices": {
-        "Wii": 200.00,
-        "Mario Kart Wii": 50.00,
-        "Wii Mote": 30.00,
-        "Super Smash Bros Browl": 60.00,
-        "The Legend of Zelda: Sky of World": 50.00,
-        "Nunchuck": 20.00,
-        "Wheel": 15.00
+        "Wii": 20.00,
+        "Mario Kart Wii": 12.00,
+        "Wii Mote": 15.00,
+        "Super Smash Bros Browl": 10.00,
+        "The Legend of Zelda: Sky of World": 10.00,
+        "Nunchuck": 5.00,
+        "Wheel": 5.00,
+        "WiiU": 100.00
+
     }
     }
