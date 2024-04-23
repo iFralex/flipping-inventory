@@ -2,7 +2,7 @@
     "orders": [
         {
             "date": "14/04/24",
-            "products": ["Wii U", "Mario Party 10", "Wii Fit U", "Wii Mote x2", "Nunciack x2"],
+            "products": ["Wii U", "Mario Party 10", "Wii Fit U", "Wii Mote x2", "Nunchuck x2"],
             "shipping_cost": 9.29,
             "insurance_cost": 4.70,
             "order_cost": 80,
@@ -10,7 +10,7 @@
         },
         {
             "date": "14/04/24",
-            "products": ["Wii", "Nuncack 2x", "Wii Mote 2x", "Wheel", "Wii charging"],
+            "products": ["Wii", "Nunchuck x2", "Wii Mote x2", "Wheel", "Wii charging"],
             "shipping_cost": 4.03,
             "insurance_cost": 1.20,
             "order_cost": 10,
@@ -18,7 +18,7 @@
         },
         {
             "date": "15/04/24",
-            "products": ["Wii", "Nunchuck x3", "Wii Balance Board", "Wheel x2", "Wii Mote 3x", "Wii Sport Resort", "Go Vacation", "Mario Kart Wii", "The Ultimate Red Ball Challenge", "Tetris Party Delux", "Smackdown VS Raw 2010"],
+            "products": ["Wii", "Nunchuck x3", "Wii Balance Board", "Wheel x2", "Wii Mote x3", "Wii Sport Resort", "Go Vacation", "Mario Kart Wii", "The Ultimate Red Ball Challenge", "Tetris Party Delux", "Smackdown VS Raw 2010"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 45.00,
@@ -34,7 +34,7 @@
         },
         {
             "date": "13/04/24",
-            "products": ["Wii", "Wii Mote x2", "Nuncack", "Wii Sport Pack", "Wii Draw Pad", "Wheel"],
+            "products": ["Wii", "Wii Mote x2", "Nunchuck", "Wii Sport Pack", "Wii Draw Pad", "Wheel"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 39.90,
@@ -49,6 +49,6 @@
         "The Legend of Zelda: Sky of Sword": 10.00,
         "Nunchuck": 5.00,
         "Wheel": 5.00,
-        "WiiU": 100.00
+        "Wii U": 100.00
     }
 }
