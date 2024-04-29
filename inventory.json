@@ -26,7 +26,7 @@
         },
         {
             "date": "17/04/24",
-            "products": ["Wii", "Wii Mote", "Nuncack", "Wii Sport Pack", "Wii Sports", "Cattivissimo Me", "Girl Life"],
+            "products": ["Wii", "Wii Mote", "Nunchuck", "Wii Sport Pack", "Wii Sports", "Cattivissimo Me", "Girl Life"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 45,
@@ -42,13 +42,24 @@
         }
  ],
     "target_prices": {
-        "Wii": 20.00,
-        "Mario Kart Wii": 12.00,
-        "Wii Mote": 15.00,
-        "Super Smash Bros Browl": 10.00,
-        "The Legend of Zelda: Sky of Sword": 10.00,
+        "Wii": 26.53,
+        "Wii Mote": 10.17,
+        "Wii Balance Board": 20.67,
+        "Wii Draw Pad": 16.8,
         "Nunchuck": 5.00,
-        "Wheel": 5.00,
-        "Wii U": 100.00
+        "Wheel": 6.95,
+        "Wii charging": 9.00,
+        "Wii U": 99.67,
+        "Mario Kart Wii": 18.35,
+        "Wii Sports": 10.68,
+        "Mario Party 10": 4.5,
+        "Wii Fit U": 4.5,
+        "Wii Sport Resort": 16.84,
+        "Go Vacation": 4.5,
+        "The Ultimate Red Ball Challenge": 4.5,
+        "Tetris Party Delux": 4.5,
+        "Smackdown VS Raw 2010": 4.5,
+        "Cattivissimo Me": 4.5,
+        "Girl Life": 4.5
     }
 }
