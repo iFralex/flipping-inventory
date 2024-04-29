@@ -2,7 +2,7 @@
     "orders": [
         {
             "date": "14/04/24",
-            "products": ["Wii U", "Mario Party 10", "Wii Fit U", "Wii Mote x2", "Nunchuck x2"],
+            "products": ["Wii U", "Mario Party 10", "Wii Fit U", "Wii Mote x2", "Nunchuck x2", "Wii Balance Board"],
             "shipping_cost": 9.29,
             "insurance_cost": 4.70,
             "order_cost": 80,
