@@ -35,9 +35,9 @@
         {
             "date": "13/04/24",
             "products": ["Wii", "Wii Mote x2", "Nunchuck", "Wii Sport Pack", "Wii Draw Pad", "Volante", "Mario Kart Wii", "Draw Studio", "Supersonic Racer", "Great Party Games", "MX vs ATV Untamed", "Nat Geo Quiz", "Wii Play Motion"],
-            "shipping_cost": 0,
+            "shipping_cost": 16.90,
             "insurance_cost": 0,
-            "order_cost": 39.90,
+            "order_cost": 22.50,
             "platform": "eBay"
         }
  ],
