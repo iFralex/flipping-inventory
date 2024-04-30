@@ -10,7 +10,7 @@
         },
         {
             "date": "14/04/24",
-            "products": ["Wii", "Nunchuck x2", "Wii Mote x2", "Wheel", "Wii charging"],
+            "products": ["Wii", "Nunchuck x2", "Wii Mote x2", "Volante", "Wii charging"],
             "shipping_cost": 4.03,
             "insurance_cost": 1.20,
             "order_cost": 10,
@@ -18,7 +18,7 @@
         },
         {
             "date": "15/04/24",
-            "products": ["Wii", "Nunchuck x3", "Wii Balance Board", "Wheel x2", "Wii Mote x3", "Wii Sport Resort", "Go Vacation", "Mario Kart Wii", "The Ultimate Red Ball Challenge", "Tetris Party Delux", "Smackdown VS Raw 2010"],
+            "products": ["Wii", "Nunchuck x3", "Wii Balance Board", "Volante x2", "Wii Mote x3", "Wii Sport Resort", "Go Vacation", "Mario Kart Wii", "The Ultimate Red Ball Challenge", "Tetris Party Delux", "Smackdown VS Raw 2010"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 45.00,
@@ -26,7 +26,7 @@
         },
         {
             "date": "17/04/24",
-            "products": ["Wii", "Wii Mote", "Nunchuck", "Wii Sport Pack", "Wii Sports", "Cattivissimo Me", "Girl Life"],
+            "products": ["Wii", "Wii Mote", "Nunchuck", "Wii Sport Pack", "Wii Sports", "Cattivissimo Me", "Girls Life", "Just Dance 2015"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 45,
@@ -34,7 +34,7 @@
         },
         {
             "date": "13/04/24",
-            "products": ["Wii", "Wii Mote x2", "Nunchuck", "Wii Sport Pack", "Wii Draw Pad", "Wheel"],
+            "products": ["Wii", "Wii Mote x2", "Nunchuck", "Wii Sport Pack", "Wii Draw Pad", "Volante", "Mario Kart Wii", "Draw Studio", "Supersonic Racer", "Great Party Games", "MX vs ATV Untamed", "Nat Geo Quiz", "Wii Play Motion"],
             "shipping_cost": 0,
             "insurance_cost": 0,
             "order_cost": 39.90,
@@ -47,7 +47,7 @@
         "Wii Balance Board": 20.67,
         "Wii Draw Pad": 16.8,
         "Nunchuck": 5.00,
-        "Wheel": 6.95,
+        "Volante": 6.95,
         "Wii charging": 9.00,
         "Wii Sport Pack": 14.5,
         "Wii U": 99.67,
@@ -56,11 +56,18 @@
         "Mario Party 10": 16,
         "Wii Fit U": 4.5,
         "Wii Sport Resort": 16.84,
-        "Go Vacation": 4.5,
+        "Go Vacation": 10,
         "The Ultimate Red Ball Challenge": 4.5,
-        "Tetris Party Delux": 4.5,
+        "Tetris Party Delux": 20,
         "Smackdown VS Raw 2010": 4.5,
-        "Cattivissimo Me": 4.5,
-        "Girl Life": 4.5
+        "Cattivissimo Me": 18,
+        "Girls Life": 4.5,
+        "Draw Studio": 4.5,
+        "Great Party Games": 4.5,
+        "Supersonic Racer": 4.5,
+        "MX vs ATV Untamed": 4.5,
+        "Nat Geo Quiz": 8,
+        "Wii Play Motion": 9,
+        "Just Dance 2015": 10
     }
 }
